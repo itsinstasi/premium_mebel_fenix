@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="premium_mebel_fenix" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="nhk">
-								<a href="../tags/./nhk.html">
-									<div class="stories__slide-pic"><img src="../img/og/nhk.png" alt="nhk" /></div>
-									<div class="stories__slide-txt">nhk</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="nhk">
+										<a href="../tags/./nhk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nhk.png);"></div>
+											<div class="stories__slide-txt">nhk</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ">
+										<a href="../tags/./mebel--na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="находка">
+										<a href="../tags/./nakhodka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nakhodka.png);"></div>
+											<div class="stories__slide-txt">находка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня в находке">
+										<a href="../tags/./kukhnya-v-nakhodke.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya-v-nakhodke.png);"></div>
+											<div class="stories__slide-txt">кухня в находке</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухонный гарнитур">
+										<a href="../tags/./kukhonnyy-garnitur.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhonnyy-garnitur.png);"></div>
+											<div class="stories__slide-txt">кухонный гарнитур</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="феникс мебель">
+										<a href="../tags/./feniks-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/feniks-mebel-.png);"></div>
+											<div class="stories__slide-txt">феникс мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="феникс находка">
+										<a href="../tags/./feniks-nakhodka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/feniks-nakhodka.png);"></div>
+											<div class="stories__slide-txt">феникс находка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня">
+										<a href="../tags/./kukhnya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya.png);"></div>
+											<div class="stories__slide-txt">кухня</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф купе">
+										<a href="../tags/./shkaf-kupe.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf-kupe.png);"></div>
+											<div class="stories__slide-txt">шкаф купе</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухня на заказ">
+										<a href="../tags/./kukhnya-na-zakaz.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhnya-na-zakaz.png);"></div>
+											<div class="stories__slide-txt">кухня на заказ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель">
+										<a href="../tags/./mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel-.png);"></div>
+											<div class="stories__slide-txt">мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="находка сити">
+										<a href="../tags/./nakhodka-siti.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nakhodka-siti.png);"></div>
+											<div class="stories__slide-txt">находка сити</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="детская мебель">
+										<a href="../tags/./detskaya-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/detskaya-mebel-.png);"></div>
+											<div class="stories__slide-txt">детская мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="nakhodka">
+										<a href="../tags/./nakhodka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nakhodka.png);"></div>
+											<div class="stories__slide-txt">nakhodka</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ливадия">
+										<a href="../tags/./livadiya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/livadiya.png);"></div>
+											<div class="stories__slide-txt">ливадия</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="семья">
+										<a href="../tags/./sem-ya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/sem-ya.png);"></div>
+											<div class="stories__slide-txt">семья</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ремонт">
+										<a href="../tags/./remont.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/remont.png);"></div>
+											<div class="stories__slide-txt">ремонт</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель находка">
+										<a href="../tags/./mebel--nakhodka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--nakhodka.png);"></div>
+											<div class="stories__slide-txt">мебель находка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="шкаф">
+										<a href="../tags/./shkaf.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/shkaf.png);"></div>
+											<div class="stories__slide-txt">шкаф</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="фо кино">
+										<a href="../tags/./fo-kino.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/fo-kino.png);"></div>
+											<div class="stories__slide-txt">фо кино</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="феникс">
+										<a href="../tags/./feniks.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/feniks.png);"></div>
+											<div class="stories__slide-txt">феникс</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель в находке">
+										<a href="../tags/./mebel--v-nakhodke.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--v-nakhodke.png);"></div>
+											<div class="stories__slide-txt">мебель в находке</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="nhk off">
+										<a href="../tags/./nhk-off.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nhk-off.png);"></div>
+											<div class="stories__slide-txt">nhk off</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="детская">
+										<a href="../tags/./detskaya.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/detskaya.png);"></div>
+											<div class="stories__slide-txt">детская</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мебель на заказ находка">
+										<a href="../tags/./mebel--na-zakaz-nakhodka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mebel--na-zakaz-nakhodka.png);"></div>
+											<div class="stories__slide-txt">мебель на заказ находка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухонный гарнитур под ключ">
+										<a href="../tags/./kukhonnyy-garnitur-pod-klyuch.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhonnyy-garnitur-pod-klyuch.png);"></div>
+											<div class="stories__slide-txt">кухонный гарнитур под ключ</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="партизанск">
+										<a href="../tags/./partizansk.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/partizansk.png);"></div>
+											<div class="stories__slide-txt">партизанск</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="мой дом">
+										<a href="../tags/./moy-dom.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/moy-dom.png);"></div>
+											<div class="stories__slide-txt">мой дом</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="стройка">
+										<a href="../tags/./stroyka.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/stroyka.png);"></div>
+											<div class="stories__slide-txt">стройка</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="nhk citi">
+										<a href="../tags/./nhk-citi.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/nhk-citi.png);"></div>
+											<div class="stories__slide-txt">nhk citi</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ">
-								<a href="../tags/./mebel--na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz.png" alt="мебель на заказ" /></div>
-									<div class="stories__slide-txt">мебель на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="находка">
-								<a href="../tags/./nakhodka.html">
-									<div class="stories__slide-pic"><img src="../img/og/nakhodka.png" alt="находка" /></div>
-									<div class="stories__slide-txt">находка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня в находке">
-								<a href="../tags/./kukhnya-v-nakhodke.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya-v-nakhodke.png" alt="кухня в находке" /></div>
-									<div class="stories__slide-txt">кухня в находке</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухонный гарнитур">
-								<a href="../tags/./kukhonnyy-garnitur.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhonnyy-garnitur.png" alt="кухонный гарнитур" /></div>
-									<div class="stories__slide-txt">кухонный гарнитур</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="феникс мебель">
-								<a href="../tags/./feniks-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/feniks-mebel-.png" alt="феникс мебель" /></div>
-									<div class="stories__slide-txt">феникс мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="феникс находка">
-								<a href="../tags/./feniks-nakhodka.html">
-									<div class="stories__slide-pic"><img src="../img/og/feniks-nakhodka.png" alt="феникс находка" /></div>
-									<div class="stories__slide-txt">феникс находка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня">
-								<a href="../tags/./kukhnya.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya.png" alt="кухня" /></div>
-									<div class="stories__slide-txt">кухня</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф купе">
-								<a href="../tags/./shkaf-kupe.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf-kupe.png" alt="шкаф купе" /></div>
-									<div class="stories__slide-txt">шкаф купе</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухня на заказ">
-								<a href="../tags/./kukhnya-na-zakaz.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhnya-na-zakaz.png" alt="кухня на заказ" /></div>
-									<div class="stories__slide-txt">кухня на заказ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель">
-								<a href="../tags/./mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel-.png" alt="мебель" /></div>
-									<div class="stories__slide-txt">мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="находка сити">
-								<a href="../tags/./nakhodka-siti.html">
-									<div class="stories__slide-pic"><img src="../img/og/nakhodka-siti.png" alt="находка сити" /></div>
-									<div class="stories__slide-txt">находка сити</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="детская мебель">
-								<a href="../tags/./detskaya-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/detskaya-mebel-.png" alt="детская мебель" /></div>
-									<div class="stories__slide-txt">детская мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="nakhodka">
-								<a href="../tags/./nakhodka.html">
-									<div class="stories__slide-pic"><img src="../img/og/nakhodka.png" alt="nakhodka" /></div>
-									<div class="stories__slide-txt">nakhodka</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ливадия">
-								<a href="../tags/./livadiya.html">
-									<div class="stories__slide-pic"><img src="../img/og/livadiya.png" alt="ливадия" /></div>
-									<div class="stories__slide-txt">ливадия</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="семья">
-								<a href="../tags/./sem-ya.html">
-									<div class="stories__slide-pic"><img src="../img/og/sem-ya.png" alt="семья" /></div>
-									<div class="stories__slide-txt">семья</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ремонт">
-								<a href="../tags/./remont.html">
-									<div class="stories__slide-pic"><img src="../img/og/remont.png" alt="ремонт" /></div>
-									<div class="stories__slide-txt">ремонт</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель находка">
-								<a href="../tags/./mebel--nakhodka.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--nakhodka.png" alt="мебель находка" /></div>
-									<div class="stories__slide-txt">мебель находка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="шкаф">
-								<a href="../tags/./shkaf.html">
-									<div class="stories__slide-pic"><img src="../img/og/shkaf.png" alt="шкаф" /></div>
-									<div class="stories__slide-txt">шкаф</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="фо кино">
-								<a href="../tags/./fo-kino.html">
-									<div class="stories__slide-pic"><img src="../img/og/fo-kino.png" alt="фо кино" /></div>
-									<div class="stories__slide-txt">фо кино</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="феникс">
-								<a href="../tags/./feniks.html">
-									<div class="stories__slide-pic"><img src="../img/og/feniks.png" alt="феникс" /></div>
-									<div class="stories__slide-txt">феникс</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель в находке">
-								<a href="../tags/./mebel--v-nakhodke.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--v-nakhodke.png" alt="мебель в находке" /></div>
-									<div class="stories__slide-txt">мебель в находке</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="nhk off">
-								<a href="../tags/./nhk-off.html">
-									<div class="stories__slide-pic"><img src="../img/og/nhk-off.png" alt="nhk off" /></div>
-									<div class="stories__slide-txt">nhk off</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="детская">
-								<a href="../tags/./detskaya.html">
-									<div class="stories__slide-pic"><img src="../img/og/detskaya.png" alt="детская" /></div>
-									<div class="stories__slide-txt">детская</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мебель на заказ находка">
-								<a href="../tags/./mebel--na-zakaz-nakhodka.html">
-									<div class="stories__slide-pic"><img src="../img/og/mebel--na-zakaz-nakhodka.png" alt="мебель на заказ находка" /></div>
-									<div class="stories__slide-txt">мебель на заказ находка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухонный гарнитур под ключ">
-								<a href="../tags/./kukhonnyy-garnitur-pod-klyuch.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhonnyy-garnitur-pod-klyuch.png" alt="кухонный гарнитур под ключ" /></div>
-									<div class="stories__slide-txt">кухонный гарнитур под ключ</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="партизанск">
-								<a href="../tags/./partizansk.html">
-									<div class="stories__slide-pic"><img src="../img/og/partizansk.png" alt="партизанск" /></div>
-									<div class="stories__slide-txt">партизанск</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="мой дом">
-								<a href="../tags/./moy-dom.html">
-									<div class="stories__slide-pic"><img src="../img/og/moy-dom.png" alt="мой дом" /></div>
-									<div class="stories__slide-txt">мой дом</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="стройка">
-								<a href="../tags/./stroyka.html">
-									<div class="stories__slide-pic"><img src="../img/og/stroyka.png" alt="стройка" /></div>
-									<div class="stories__slide-txt">стройка</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="nhk citi">
-								<a href="../tags/./nhk-citi.html">
-									<div class="stories__slide-pic"><img src="../img/og/nhk-citi.png" alt="nhk citi" /></div>
-									<div class="stories__slide-txt">nhk citi</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -335,17 +344,26 @@
 					<div class="article__wrap" id="ja-article-wrap">
 						<div class="article-main">
 							<div class="article-content">
-								<div class="article-slider js-article-slider">
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/b7a4508c47993b28587ebaac6128be62/5E210CF5/t51.2885-15/e35/37417323_671452716552537_6621550977163984896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt=""></div></div>
-									<div><div class="article-slide"><img data-lazy="https://scontent-arn2-2.cdninstagram.com/vp/490836cf6d3acdbc1299e43ba6a42d3e/5E251795/t51.2885-15/e35/37863996_213009896039079_8021814666185408512_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt=""></div></div>
+								<div class="article-slider-wrap">
+									<div class="article-slider js-article-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/b7a4508c47993b28587ebaac6128be62/5E210CF5/t51.2885-15/e35/37417323_671452716552537_6621550977163984896_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" class="swiper-lazy" alt="">
+											</div>
+											<div class="swiper-slide article-slider__slide">
+												<img data-src="https://scontent-arn2-2.cdninstagram.com/vp/490836cf6d3acdbc1299e43ba6a42d3e/5E251795/t51.2885-15/e35/37863996_213009896039079_8021814666185408512_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" class="swiper-lazy" alt="">
+											</div>
+											<div class="article-slider-pagination js-article-slider-pagination"></div>
+											<div class="article-slider-arrow article-slider-arrow--prev js-article-slider-prev"></div>
+											<div class="article-slider-arrow article-slider-arrow--next js-article-slider-next"></div>
+										</div>
+									</div>
 								</div>
 								<p>Чтобы домашний питомец чувствовал себя комфортно ему нужны подходящие условия существования.<br/>Кроме того такая мебель для кошек и собак прекрасно впишется в общий интерьер.<br/>---------------<br/>тел 89147087033 whatsapp 89147087033<br/>----------------</p> 
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/Bl-WSBrgWPg/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -421,7 +439,7 @@
 							<a href="./klassnox-kogda-ty-s-partnerom-na-odnoy-volne.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>3</span> <span><i class="fa fa-heart" aria-hidden="true"></i>59</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>3</span> <span><i class="fa fa-heart" aria-hidden="true"></i>60</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/33975f1701447671893714e1ab0bf7c1/5E32F4C8/t51.2885-15/e35/70504116_2380070692261107_7352883138297483215_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Классно, когда ты с партнером на одной волне.">
 								</div>
@@ -432,7 +450,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>16</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/70f544ef101af085c00a2d2a17b6d131/5DA576DB/t51.2885-15/e35/43516971_1828727970556781_3595592923810707343_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Вот такие необычные гости залетают в наш сад.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/98a07c97e622d4b9c1ef02df97a524ea/5DA96B5B/t51.2885-15/e35/43516971_1828727970556781_3595592923810707343_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Вот такие необычные гости залетают в наш сад.">
 								</div>
 								<div class="article-more__item-name">Вот такие необычные гости залетают в наш сад.</div>
 							</a>
@@ -441,7 +459,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>8</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5b2d4dc59059696ec69eeef990e7393c/5DA5CE2F/t51.2885-15/e35/59872608_466752190773583_1060936286111475214_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Рассвет на Тобизина встречали в день пионерии.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/7ff11f9983fc3c60b6b1d15ee6c10ada/5DA919EF/t51.2885-15/e35/59872608_466752190773583_1060936286111475214_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=107" alt="Рассвет на Тобизина встречали в день пионерии.">
 								</div>
 								<div class="article-more__item-name">Рассвет на Тобизина встречали в день пионерии.</div>
 							</a>
@@ -450,7 +468,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>5</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5903141b7d2535619ac6b4b9ca438b7b/5DA579A3/t51.2885-15/e35/47077514_276332943028901_4513269968951109660_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Мой любимый край">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/1e1e284eb7044569afeb0ea44110cc17/5DA96E23/t51.2885-15/e35/47077514_276332943028901_4513269968951109660_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Мой любимый край">
 								</div>
 								<div class="article-more__item-name">Мой любимый край</div>
 							</a>
@@ -459,7 +477,7 @@
 									<div class="article-more__item-pic-blind">
 										<span><i class="fa fa-comment-o" aria-hidden="true"></i>5</span> <span><i class="fa fa-heart" aria-hidden="true"></i>0</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/ad75bd254cd0c404f9395ab5f569bc71/5E39A537/t51.2885-15/e35/36995051_389351598258009_687095313097293824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Для защиты мебели от животных достаточно провести лимонной коркой по выбранной поверхности или потереть листочком мяты.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/4cff0915b4eff19551f497fc6d8dce9f/5E613237/t51.2885-15/e35/36995051_389351598258009_687095313097293824_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Для защиты мебели от животных достаточно провести лимонной коркой по выбранной поверхности или потереть листочком мяты.">
 								</div>
 								<div class="article-more__item-name">Для защиты мебели от животных достаточно провести лимонной коркой по выбранной поверхности или потереть листочком мяты.</div>
 							</a>
@@ -475,7 +493,7 @@
 							<a href="./moy-chudesnyy-sad-zatsvelxxxxxxxx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>15</span> <span><i class="fa fa-heart" aria-hidden="true"></i>235</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>15</span> <span><i class="fa fa-heart" aria-hidden="true"></i>234</span>
 									</div>
 									<img src="https://scontent-arn2-2.cdninstagram.com/vp/115c462403a530cec1146aefd48ddf5b/5E205A6B/t51.2885-15/e35/65246792_384301292220281_5234978436665771928_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105" alt="Мой чудесный сад зацвел👏👏👏👏">
 								</div>
@@ -521,11 +539,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
