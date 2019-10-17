@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://premium-mebel-fenix.itsinsta.site//sitemap.xml
+Sitemap: https://premium-mebel-fenix.itsinsta.site//sitemap.xml
